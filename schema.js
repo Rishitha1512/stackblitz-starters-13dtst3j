@@ -17,6 +17,7 @@ const userSchema = new mongoose.Schema({
   },
   roles: {
     type: [String],
+    default: ['user'],
   },
 
  
@@ -34,6 +35,7 @@ const userSchema = new mongoose.Schema({
 
   lastLogin: {
     type: Date,
+    default: null,
   },
 });
 
